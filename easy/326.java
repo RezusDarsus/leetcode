@@ -6,8 +6,8 @@ class Solution {
         if(n == 1){
             return true;
         }
-        if(n % 3 == 0){
-            return true;
+        if(n % 3 != 0){
+            return false;
         }
         return isPowerOfThree(n / 3);
     }
